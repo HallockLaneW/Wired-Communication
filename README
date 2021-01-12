@@ -1,0 +1,19 @@
+
+Start by openning the physical layer.
+    this can be done by running the command ./physical.exe [enter a port]
+
+EX) ./physical.exe 39000
+
+to continue, in another terminal you need to open the data link layer. 
+to do this you will need to run the following command ./datalink.exe [IP of the host] [host PORT] [exit PORT]
+
+EX.) ./datalink.exe lab13.cs.ndsu.nodak.edu 39000 39001
+
+to continue, in another terminal you will need to open the network layer.
+to do this you will need to run the following command ./Network.exe [IP of datalink] [Port of datalink] [Name]
+
+EX.) ./Network.exe lab13.cs.ndsu.nodak.edu 39001 John
+
+you will then need to repeat opening the data link layer and the network layer for the second half of the connection. 
+once established, both network layers should be able to talk to eachother. you can terminate each connection by typing "EXIT" or by pressing Ctlr+C
+
